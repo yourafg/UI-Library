@@ -1447,7 +1447,7 @@ end
                 })
 
                 library:apply_theme(glow, "accent", "ImageColor3") 
-                
+
                 local accent_line = library:create("Frame", {
                     Parent = inline1,
                     Name = "",
@@ -1459,41 +1459,6 @@ end
 
                 library:apply_theme(accent_line, "accent", "BackgroundColor3") 
                 
-                local name = library:create("TextLabel", {
-                    Parent = inline1,
-                    Name = "",
-                    FontFace = library.font,
-                    TextColor3 = Color3.fromRGB(170, 170, 170),
-                    BorderColor3 = Color3.fromRGB(0, 0, 0),
-                    Text = "keybinds",
-                    TextStrokeTransparency = 0.5,
-                    BorderSizePixel = 0,
-                    BackgroundTransparency = 1,
-                    Position = UDim2.new(0, 0, 0, -1),
-                    Size = UDim2.new(1, 0, 0, 1),
-                    ZIndex = 2,
-                    TextSize = 12,
-                    BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-                })
-                
-                local inline2 = library:create("Frame", {
-                    Parent = inline1,
-                    Name = "",
-                    Position = UDim2.new(0, 2, 0, 2),
-                    BorderColor3 = Color3.fromRGB(0, 0, 0),
-                    Size = UDim2.new(1, -4, 1, -4),
-                    BorderSizePixel = 0,
-                    BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-                })
-                
-                local main = library:create("Frame", {
-                    Parent = inline2,
-                    Name = "",
-                    Position = UDim2.new(0, 2, 0, 2),
-                    BorderColor3 = Color3.fromRGB(57, 57, 57),
-                    Size = UDim2.new(1, -4, 1, -4),
-                    BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-                })
                 
                 local tab_inline = library:create("Frame", {
                     Parent = main,
