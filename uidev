@@ -39,7 +39,6 @@ if getgenv().library then
     getgenv().library:unload()
 end 
 
--- library init
     getgenv().library = {
         flags = {},
         config_flags = {},
@@ -739,7 +738,7 @@ end
                         task.wait()
                     end 
                 end)
-            -- 
+            -- keybind
 
         function library:new_keybind(properties)
             local cfg = {text = properties.name or properties.text or "[mb1] aimbot (hold)"}
@@ -3678,7 +3677,8 @@ end
                     library.__panel = false 
                 end)
             end     
-        end 
+        end
+    end
     -- 
 -- 
 
