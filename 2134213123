@@ -33,11 +33,7 @@ local gui_offset = gui_service:GetGuiInset().Y
 local max = math.max 
 local floor = math.floor 
 local min = math.min 
-local abs = math.abs 
-
-if getgenv().library then 
-    getgenv().library:unload()
-end 
+local abs = math.abs  
 
 -- library init
     getgenv().library = {
